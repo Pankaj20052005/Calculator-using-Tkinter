@@ -13,12 +13,12 @@ def on_click(button_value):
     else:
         entry_var.set(current + button_value)
 
-# Create the main window
+
 root = tk.Tk()
 root.title("Calculator")
 root.configure(bg='#B287A3')  
 
-# Entry widget for displaying the input and result
+
 entry_var = tk.StringVar()
 entry = tk.Entry(root, textvariable=entry_var, justify='right', font=('Arial', 18), bg='#ffffff')  
 entry.grid(row=0, column=0, columnspan=4, ipadx=8, ipady=8)
@@ -48,4 +48,5 @@ for button in buttons:
 
 # Start the main loop
 root.mainloop()
+
 
